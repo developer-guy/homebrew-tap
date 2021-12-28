@@ -11,7 +11,7 @@ class DockerCredentialMagic < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/developer-guy/docker-credential-magic/releases/download/v0.9.0/docker-credential-magic_Darwin_arm64.tar.gz"
-      sha256 "fa6fcb8258f33df318e7fc9f8dd81d65820665ae4d348e8347fa7c41cf244d81"
+      sha256 "072a4739eb0d9a2185fc6081fbddb3ad92e9d52c5982014fe71c5c971223b79d"
 
       def install
         bin.install "docker-credential-magic"
@@ -19,7 +19,7 @@ class DockerCredentialMagic < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/developer-guy/docker-credential-magic/releases/download/v0.9.0/docker-credential-magic_Darwin_x86_64.tar.gz"
-      sha256 "338390dbb200b61115850a7d772efe26decd3c86e08e7941abb8703b1bc0aafe"
+      sha256 "7e0e2e4a99e83c2b801833afc5dfed340466a6dfd090b41efe1ec06b7ebea5d3"
 
       def install
         bin.install "docker-credential-magic"
@@ -30,7 +30,7 @@ class DockerCredentialMagic < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/developer-guy/docker-credential-magic/releases/download/v0.9.0/docker-credential-magic_Linux_armv6.tar.gz"
-      sha256 "4217e511334f2143b60822978c0af504040bafe4930e63012d367c70f5678e35"
+      sha256 "18fd725611d92d3438e8c2718af630ba6a843e5489dd79b6de75d16e14840431"
 
       def install
         bin.install "docker-credential-magic"
@@ -38,7 +38,7 @@ class DockerCredentialMagic < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/developer-guy/docker-credential-magic/releases/download/v0.9.0/docker-credential-magic_Linux_arm64.tar.gz"
-      sha256 "eb03a1c5bcd34b88bf8ef859b68c37cbc040cf69be39bff387ff58ebf7eb1161"
+      sha256 "9c5050815ecd39963691664f0c14b4bddde0d3f9166b1a9262e278190fb49650"
 
       def install
         bin.install "docker-credential-magic"
@@ -46,7 +46,7 @@ class DockerCredentialMagic < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/developer-guy/docker-credential-magic/releases/download/v0.9.0/docker-credential-magic_Linux_x86_64.tar.gz"
-      sha256 "714bedf04a89548a0dcef09f033c4e7c07527b42778dc1f2fa9299562b3ba0b7"
+      sha256 "3d36a53e1eed8ecf4af83f9b5aae44d56d2a043f6469f212f7d1ac74f755695e"
 
       def install
         bin.install "docker-credential-magic"
